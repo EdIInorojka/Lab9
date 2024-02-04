@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Lab9.Program">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAEAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab9.MessageHandler">
+    <Position X="7.75" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABAICBAAQEAAAAAAAAEAEAIAAAAAAQEAAAIAAAACAAA=</HashCode>
+      <FileName>MessageHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab9.DialClockArray">
+    <Position X="5.25" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACAAIAAAAAAAgAAAiAAAIAAAgAAAQAAAAAAAAAAgAAA=</HashCode>
+      <FileName>DialClockArray.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab9.DialClock">
+    <Position X="1" Y="3.5" Width="3.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAABQAAAAxEEAAgAAAwAAAUAAAAIAAAAAAAA=</HashCode>
+      <FileName>DialClock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

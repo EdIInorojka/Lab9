@@ -49,7 +49,7 @@ namespace Lab9
             for (int i = 0; i < size; i++)
             {
                 arr[i] = new DialClock();
-                Console.WriteLine($"{inputMessage}");
+                Console.WriteLine($"{inputMessage} {i+1}");
                 Console.Write("Введите часы: ");
                 arr[i].Hours = int.Parse(Console.ReadLine());
                 Console.Write("Введите минуты: ");

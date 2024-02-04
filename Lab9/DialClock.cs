@@ -76,10 +76,10 @@ namespace Lab9
 
         public double CalculateAngle()
         {
-            double hourAngle = (hours % 12 + minutes / 60.0) * 30;
-            double minuteAngle = minutes * 6;
+            double hourAngle = (Hours % 12 + Minutes / 60.0) * 30;
+            double minuteAngle = Minutes * 6;
             double angle = Math.Abs(hourAngle - minuteAngle);
-            return Math.Round(angle, 4);
+            return Math.Round(angle, 4)%180;
         }
 
         public static double CalculateAngleStatic(int hours, int minutes)
@@ -104,7 +104,7 @@ namespace Lab9
             double hourAngle = (hours % 12 + minutes / 60.0) * 30;
             double minuteAngle = minutes * 6;
             double angle = Math.Abs(hourAngle - minuteAngle);
-            return Math.Round(angle, 4);
+            return Math.Round(angle, 4)%180;
         }
 
         public static bool IsDevidedTwoHalf(double angle)
@@ -122,8 +122,10 @@ namespace Lab9
         public int Counter()
         {
             int count = 0;
-            count += hours * 60;
-            count += minutes;
+            count += Hours * 60;
+            count += Hours * 6;
+            count += Minutes / 10;
+            count += Minutes;
             return count;
         }
 

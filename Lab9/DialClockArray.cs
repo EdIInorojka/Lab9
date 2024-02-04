@@ -52,8 +52,10 @@ namespace Lab9
                 Console.WriteLine($"{inputMessage} {i+1}");
                 Console.Write("Введите часы: ");
                 arr[i].Hours = int.Parse(Console.ReadLine());
+                /*arr[i].Hours = 4;*/
                 Console.Write("Введите минуты: ");
                 arr[i].Minutes = int.Parse(Console.ReadLine());
+                /*arr[i].Minutes = 4;*/
             }
         }
 
@@ -61,7 +63,7 @@ namespace Lab9
         {
             for (int i = 0; i < arr.Length; i++)
             {
-                Console.WriteLine("Элемент {0}:", i + 1);
+                Console.WriteLine($"Элемент {i+1}:");
                 Console.WriteLine("Часы: " + arr[i].Hours);
                 Console.WriteLine("Минуты: " + arr[i].Minutes);
                 Console.WriteLine();
@@ -75,7 +77,8 @@ namespace Lab9
             {
                 if (index < 0 || index >= arr.Length)
                 {
-                    throw new ArgumentException();
+                    return null;
+                    /*throw new ArgumentException($"Значение должно входить в диапазон от 0 до {arr.Length}");*/
                 }
 
                 return arr[index];
@@ -85,7 +88,8 @@ namespace Lab9
             {
                 if (index < 0 || index >= arr.Length)
                 {
-                    throw new ArgumentException();
+                    return;
+                    /*throw new ArgumentException($"Значение должно входить в диапазон от 0 до {arr.Length}");*/
                 }
 
                 arr[index] = value;

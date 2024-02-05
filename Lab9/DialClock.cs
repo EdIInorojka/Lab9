@@ -66,13 +66,25 @@ namespace Lab9
             count++;
         }
 
-        public void AddMinute()
+        /*public void AddMinute()
         {
             Hours += (minutes + 1) / 60;
             minutes = (minutes + 1) % 60;
+        }*/
+
+        public static DialClock operator ++(DialClock clock)
+        {
+            clock.Hours += (clock.minutes + 1) / 60;
+            clock.Minutes = (clock.minutes + 1) % 60;
+            return clock;
         }
 
-        public void DeleteMinute() => Minutes--;
+        /*public void DeleteMinute() => Minutes--;*/
+        public static DialClock operator --(DialClock clock)
+        {
+            clock.Minutes--;
+            return clock;
+        }
 
         public double CalculateAngle()
         {

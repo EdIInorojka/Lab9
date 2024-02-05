@@ -66,14 +66,14 @@ namespace Lab9
         public static void AddMinute()
         {
             DialClock clock = CreateParametersClock();
-            clock.AddMinute();
+            clock.Minutes++;
             clock.PrintInfo();
         }
 
         public static void DeleteMinute()
         {
             DialClock clock = CreateParametersClock();
-            clock.DeleteMinute();
+            clock.Minutes--;
             clock.PrintInfo();
         }
 

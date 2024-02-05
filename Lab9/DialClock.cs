@@ -74,8 +74,7 @@ namespace Lab9
 
         public static DialClock operator ++(DialClock clock)
         {
-            clock.Hours += (clock.minutes + 1) / 60;
-            clock.Minutes = (clock.minutes + 1) % 60;
+            clock.Minutes++;
             return clock;
         }
 

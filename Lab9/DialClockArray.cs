@@ -50,12 +50,8 @@ namespace Lab9
             {
                 arr[i] = new DialClock();
                 Console.WriteLine($"{inputMessage} {i+1}");
-                Console.Write("Введите часы: ");
-                arr[i].Hours = int.Parse(Console.ReadLine());
-                /*arr[i].Hours = 4;*/
-                Console.Write("Введите минуты: ");
-                arr[i].Minutes = int.Parse(Console.ReadLine());
-                /*arr[i].Minutes = 4;*/
+                arr[i].Hours = MessageHandler.CheckMessage("Введите часы: ");
+                arr[i].Minutes = MessageHandler.CheckMessage("Введите минуты: ");
             }
         }
 

@@ -104,12 +104,5 @@ namespace UnitTests
             Assert.AreEqual(size, arr.ReturnArrayLength());
         }
 
-        [TestMethod]
-        public void DialClockArray_DisplayElements_ShouldDisplayElements()
-        {
-            DialClockArray arr = new DialClockArray(1);
-            Assert.AreEqual(null,null);
-        }
-
     }
 }

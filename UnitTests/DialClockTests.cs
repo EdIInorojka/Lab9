@@ -54,7 +54,7 @@ namespace UnitTests
             DialClock clock = new DialClock(1, 59);
 
             // Act
-            clock.AddMinute();
+            clock.Minutes++;
 
             // Assert
             Assert.AreEqual(2, clock.Hours);
@@ -68,7 +68,7 @@ namespace UnitTests
             DialClock clock = new DialClock(1, 0);
 
             // Act
-            clock.DeleteMinute();
+            clock.Minutes--;
 
             // Assert
             Assert.AreEqual(0, clock.Hours);

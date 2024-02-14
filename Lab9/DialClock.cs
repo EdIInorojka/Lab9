@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices.WindowsRuntime;
 using NUnit.Framework;
 
 namespace Lab9
@@ -66,19 +67,12 @@ namespace Lab9
             count++;
         }
 
-        /*public void AddMinute()
-        {
-            Hours += (minutes + 1) / 60;
-            minutes = (minutes + 1) % 60;
-        }*/
-
         public static DialClock operator ++(DialClock clock)
         {
             clock.Minutes++;
             return clock;
         }
 
-        /*public void DeleteMinute() => Minutes--;*/
         public static DialClock operator --(DialClock clock)
         {
             clock.Minutes--;

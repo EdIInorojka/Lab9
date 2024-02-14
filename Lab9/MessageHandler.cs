@@ -127,7 +127,8 @@ namespace Lab9
         public static void ShowIndexerGet()
         {
             DialClockArray array = AutoCreateArray();
-            DialClock clock = CreateParametersClock();
+            Console.WriteLine("Сформированный массив: ");
+            array.DisplayElements();
             int num = CheckMessage("Введите индекс");
             if (num > 0 && num < array.ReturnArrayLength())
             {
